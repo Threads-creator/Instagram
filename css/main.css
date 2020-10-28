@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-width: 100vh;
+    background-color: rgb(247, 250, 253);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.left_side img{
+    height: 50em;
+}
+
+.right_side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.box_perfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.box_perfil:nth-child(1){
+    min-height: 19rem;
+}
+
+.photo_perfil{
+    height: 6rem;
+}
+
+.profile_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+a.button_continue{
+    background-color: deepskyblue;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+a.button_remove{
+    color: deepskyblue;
+    margin-top: 1rem;
+}
+
+p.gray{
+    color: rgb(160, 160, 160);
+}
+
+a.link_blue{
+    color: deepskyblue;
+}
+
+.box_download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.button_getApp{
+    height: 3.2rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.button_getApp:nth-child(1){
+    background-image: url('../media/button_getApp_app-store.png');
+}
+
+.button_getApp:nth-child(2){
+    background-image: url('../media/button_getApp_play-store.png');
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    .body{
+        width: 90%;
+    }
+
+    .left_side{
+        display: none;
+    }
+
+    .right_side{
+        width: 100%;
+    }
+}
+/*
+.left_side{
+    width: 30%;
+    float: left;
+}
+
+.right_side{
+    width: 30%;
+    float: right;
+}
+
+#iphones{
+    position: relative;
+    max-width: fit-content;
+}*/
